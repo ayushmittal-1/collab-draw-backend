@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "*", // Allow all origins (or replace with your Vercel frontend URL)
+        origin: ["https://collab-draw-one.vercel.app"], // Add your Vercel URL here
         methods: ["GET", "POST"]
     }
 });
